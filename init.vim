@@ -7,6 +7,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Plugins
+Plugin 'github/copilot.vim'
 Plugin 'scrooloose/nerdtree.git'
 " Plugin 'https://github.com/davidhalter/jedi-vim'
 Plugin 'tpope/vim-fugitive'
