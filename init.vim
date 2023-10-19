@@ -7,6 +7,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " Plugins
+Plugin 'norcalli/nvim-colorizer.lua'
 Plugin 'github/copilot.vim'
 Plugin 'scrooloose/nerdtree.git'
 " Plugin 'https://github.com/davidhalter/jedi-vim'
@@ -47,6 +48,8 @@ filetype plugin indent on
 " Begin Configurations 
 
 set encoding=utf-8
+set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
+set fileformats=unix,dos,mac
 set laststatus=2
 set t_Co=256
 set number
@@ -193,6 +196,7 @@ let g:session_default_name="LastSession"
 let g:session_default_overwrite=1
 let g:session_autosave='no'
 let g:session_autoload='no'
+
 
 " after a re-source, fix syntax matching issues (concealing brackets):
 if exists('g:loaded_webdevicons')
